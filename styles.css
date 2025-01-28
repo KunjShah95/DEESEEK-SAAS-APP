@@ -1,0 +1,365 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #d1afaf;
+    background-color: #262323;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+  }
+  
+  body.dark-mode {
+    background-color: #120909;
+    color: #f9f9f9;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Dark Mode Toggle */
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .dark-mode-toggle i {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  /* Header */
+  .header {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+  }
+  
+  .cta-button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background: #e64a19;
+  }
+  
+  /* Dashboard Section */
+  .dashboard {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .dashboard h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-mockup {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #007bff;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .main-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .main-content p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Pricing Section */
+  .pricing {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .pricing h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .pricing-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card .price {
+    font-size: 36px;
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .pricing-card .price span {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .pricing-card ul li {
+    margin: 10px 0;
+  }
+  
+  .pricing-card.featured {
+    background: #007bff;
+    color: white;
+  }
+  
+  .pricing-card.featured .price {
+    color: white;
+  }
+  
+  .pricing-card.featured .cta-button {
+    background: white;
+    color: #007bff;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 60px 0;
+    background: #f1f1f1;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .swiper-slide {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .swiper-slide p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .swiper-slide span {
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .faq h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .faq-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .faq-item p {
+    font-size: 16px;
+    color: #666;
+    display: none;
+  }
+  
+  .faq-item.active p {
+    display: block;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer .social-links {
+    margin-top: 10px;
+  }
+  
+  .footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .footer .social-links a:hover {
+    color: #007bff;
+  }
+  
